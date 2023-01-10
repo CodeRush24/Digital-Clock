@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@500&family=Ubuntu&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #191830;
+    color: white;
+}
+
+.main-head {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.container {
+    display: inline-block;
+    font-size: 7rem;
+    border-radius: 1.5rem;
+    overflow: hidden;
+    margin: 3px;
+    padding: 2rem;
+    font-weight: 600;
+    font-family: 'Signika Negative', sans-serif;
+    background-color: rgba(255, 255, 255, .06);
+    box-shadow: rgb(0 0 0 / 7%) 0px 1px 1px, rgb(0 0 0 / 7%) 0px 2px 2px, rgb(0 0 0 / 7%) 0px 4px 4px, rgb(0 0 0 / 7%) 0px 8px 8px, rgb(0 0 0 / 7%) 0px 16px 16px;
+    backdrop-filter: blur(70px);
+}
+
+.dot {
+    font-size: 5rem;
+}
+
+.clock {
+    display: flex;
+    align-items: center;
+    padding: 5rem 1rem;
+    margin-bottom: 7rem;
+    border-radius: 3rem;
+    background-color: rgba(255, 255, 255, .06);
+    backdrop-filter: blur(30px);
+    box-shadow: rgb(0 0 0 / 6%) 0px 10px 15px -3px, rgb(0 0 0 / 5%) 0px 4px 6px -2px;
+}
+
+#min, #hrs{
+    color: #34b3f1;
+}
+
+.AMPM {
+    display: flex;
+    flex-direction: row;
+    font-size: 4rem;
+    margin-left: 1rem;
+}
+
+#ampm{
+    color: #f15412;
+}
+#sec {
+    color: yellow;
+}
+
+.card1 {
+    /* background: linear-gradient(180deg, #02ccfc, #0a2dbb); */
+    background: linear-gradient(180deg, #ff005c, #810034);
+    width: 300px;
+    border-radius: 500px;
+    height: 300px;
+    margin-bottom: 370px;
+    margin-left: 140px;
+    z-index: -1;
+    animation-name: top-down2;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.card2 {
+    /* background: linear-gradient(180deg, #facf29, #ff3124); */
+    background: linear-gradient(180deg, rgb(202, 6, 202), #3e065f);
+    width: 300px;
+    border-radius: 500px;
+    height: 300px;
+    margin-right: 350px;
+    animation-name: top-down2;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.animation{
+    position: absolute;
+}
+
+@keyframes top-down2 {
+    0% {
+        transform: translateY(0px);
+    }
+
+    100% {
+        transform: translateY(60px);
+    }
+}
